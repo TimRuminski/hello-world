@@ -1,0 +1,86 @@
+<!doctype html>
+
+<!-- Hello World HTML -->
+<!-- don't forget to validate at https://validator.w3.org -->
+
+<html lang="en">
+
+    <head>
+        <!-- Where CSS and Meta Information Goes -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <!-- The text the user sees in browser tab -->
+        <title>Hello World 1.0</title>
+
+        <!-- this line is to include the FontAwesome icon set -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+
+        <!-- this line is to include Bootstrap formatting -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- This is how the web page knows about YOUR CSS file! -->
+        <link rel="stylesheet" type="text/css" href="hello-world.css"/>
+
+    </head>
+    <body>
+        <!-- This is where all the VISIBLE web page content goes -->
+
+        <!-- outermost responsive container -->
+        <div class="container-fluid">
+
+            <!-- responsive row -->
+            <div id="hello-world-row" class="row row-eq-height">
+
+                <!-- responsive column that fills half of desktop screen -->
+                <div id="hello-world-column1" class="col-sm-6">
+
+                    <!-- the element accessed in our JavaScript "click" -->
+                    <p>Welcome to the website!</p>
+                    <br>
+                    <br>
+                    <p>Click on this image of a quail</p>
+                    <img src="quail.jpg" alt= "Quail sitting on a fence pole"
+                    style= "width:18em;height:9em;">
+
+                </div>
+
+                <!-- responsive column that fills half of desktop screen -->
+                <div id="hello-world-column2" class="col-sm-6">
+
+                    <!-- empty element that will be filled via JavaScript -->
+                    <p>You should click on the screen somewhere!</p>
+                    <br>
+                    <br>
+                    <p
+                    style="font-family: times;"><u>Or on this text</u></p>
+
+
+                </div>
+                <div id="new_column1" class="col-sm-6">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                     <img src="hello.jpg" alt="LED hello sign"
+                     style= "width:30em;height:32em;">
+
+
+                </div>
+
+                <div id="new_column2" class="col-sm-6">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <i class="fas fa-globe" style="font-size: 36em"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- This is how the web page knows about YOUR JavaScript file! -->
+        <script src="hello-world.js"></script>
+    </body>
+
+</html>
